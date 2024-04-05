@@ -3,15 +3,27 @@ import { movies, randomMoviesSet1, randomMoviesSet2 } from "../../lib/data";
 export default function VideoCarousel() {
   return (
     <div className="bg-background">
-      <div >
-        <div>
-          <img src={movies[0].poster} alt={movies[0].name} />
+      <div className="flex gap-5 mb-5 overflow-clip">
+        <div className="w-[60vw] shrink-0 ">
+          <img
+            className="rounded-2xl w-full h-full object-cover"
+            src={movies[0].poster}
+            alt={movies[0].name}
+          />
         </div>
-        <div>
-          <img src={movies[1].poster} alt={movies[0].name} />
+        <div className="w-[60vw] shrink-0 ">
+          <img
+            className="rounded-2xl w-full h-full object-cover"
+            src={movies[1].poster}
+            alt={movies[0].name}
+          />
         </div>
-        <div>
-          <img src={movies[2].poster} alt={movies[0].name} />
+        <div className="w-[60vw] shrink-0 ">
+          <img
+            className="rounded-2xl w-full h-full object-cover"
+            src={movies[2].poster}
+            alt={movies[0].name}
+          />
         </div>
       </div>
 
