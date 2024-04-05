@@ -28,6 +28,7 @@ export default {
       "4xl": ["2.5rem", "1.1"], // 40px
       "5xl": ["4.5rem", "1.05"], // 72px
     },
+    // animate-carousel-move keyframe + animation( default duration 80s )
     keyframes: {
       "carousel-move": {
         "0%": { transform: "translateX(0)" },
