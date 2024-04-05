@@ -4,8 +4,11 @@ import { Container } from "../container";
 export default function Hero() {
   return (
     <div className="relative bg-background h-[300vh] text-white">
-      <div className="absolute top-0 left-0 w-full">
-        <img src="/napoleon.webp" />
+      <div className="absolute -top-[--header-height] left-0 w-full h-[200vh] bg-white">
+        <img
+          className="sticky top-0 h-screen object-contain"
+          src="/napoleon.webp"
+        />
       </div>
 
       <Container className="relative z-10 pb-7 min-h-[--hero-height] flex flex-col justify-end items-start">
