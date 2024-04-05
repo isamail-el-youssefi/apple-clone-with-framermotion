@@ -1,6 +1,7 @@
 import { Header } from "./components/header";
 import Hero from "./components/section/hero";
 import Usps from "./components/section/usps";
+import VideoCarousel from "./components/section/video-carousel";
 import "./index.css";
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
           <Hero />
           <Usps />
         </div>
-        {/*         <VideoCarousel />
-         */}{" "}
+        <VideoCarousel />
+        <div className="h-[300vh]" />
       </main>
     </>
   );
