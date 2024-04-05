@@ -15,16 +15,27 @@ export default function VideoCarousel() {
         </div>
       </div>
 
-      <div>
-        {randomMoviesSet1.map((movie, i) => (
-          <img src={movie.poster} alt={movie.name} key={i} />
-        ))}
-      </div>
-      <div>
-        {randomMoviesSet2.map((movie, i) => (
-          <img src={movie.poster} alt={movie.name} key={i} />
-        ))}
-      </div>
+      <SmallVideoCarousel movie={randomMoviesSet1} />
+      <SmallVideoCarousel movie={randomMoviesSet2} />
     </div>
   );
 }
+
+type Movie = {
+  poster: string;
+  name: string;
+};
+
+type SmallVideoCarouselProps = {
+  movie: Movie[];
+};
+
+const SmallVideoCarousel = ({ movie }: SmallVideoCarouselProps) => {
+  return (
+    <div>
+      {movie.map((movie, i) => (
+        <img src={movie.poster} alt={movie.name} key={i} />
+      ))}
+    </div>
+  );
+};
