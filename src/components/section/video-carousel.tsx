@@ -3,7 +3,7 @@ import { movies, randomMoviesSet1, randomMoviesSet2 } from "../../lib/data";
 export default function VideoCarousel() {
   return (
     <div className="bg-background">
-      <div>
+      <div >
         <div>
           <img src={movies[0].poster} alt={movies[0].name} />
         </div>
@@ -32,9 +32,16 @@ type SmallVideoCarouselProps = {
 
 const SmallVideoCarousel = ({ movie }: SmallVideoCarouselProps) => {
   return (
-    <div>
+    //overflowclip: removes the scroll in x axis
+    <div className="flex gap-3 overflow-clip">
       {movie.map((movie, i) => (
-        <img src={movie.poster} alt={movie.name} key={i} />
+        <div className="w-[24vw] shrink-0" key={i}>
+          <img
+            className="object-cover w-full h-full rounded-xl"
+            src={movie.poster}
+            alt={movie.name}
+          />
+        </div>
       ))}
     </div>
   );
