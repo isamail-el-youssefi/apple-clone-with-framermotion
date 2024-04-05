@@ -12,7 +12,7 @@ export const Header = () => {
         </Container>
       </header>
 
-      <div className="bg-backgroundContrast sticky top-0  text-white">
+      <div className="bg-backgroundContrast sticky z-20 top-0  text-white">
         <Container className="flex min-h-11 items-center justify-between">
           <p className="text-xl font-semibold">Apple TV+</p>
           <Button size="small">Stream now</Button>
