@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
 import Hero from "./components/section/hero";
+import Usps from "./components/section/usps";
 import "./index.css";
 
 function App() {
@@ -7,9 +8,10 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
-        {/*           <Usps />
-         */}{" "}
+        <div className="bg-background">
+          <Hero />
+          <Usps />
+        </div>
         {/*         <VideoCarousel />
          */}{" "}
       </main>
